@@ -1,0 +1,160 @@
+html{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+}
+@media all and (min-width: 0px){
+  .aside{
+    display: none;
+  }
+
+  body > .main > .voltar-menu{
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 30px auto;
+    border: 2px solid #F7F2E0;
+    border-radius: 10px 0px;
+    width: 30%;
+    max-width: 150px;
+    text-decoration: none;
+    color:  #F7F2E0;
+    font-size: 20px;
+    }
+
+  body > .main > .voltar-menu > i{
+    font-size: 20px;
+    margin: 10px;
+    }
+
+  body > .main > .voltar-menu:hover{
+    background-color: #F7F2E0;
+    color: #19070B;
+    border: 2px solid #19070B;
+  }
+
+  #formulario{
+    width: 90%;
+    margin: auto;
+  }
+}
+
+@media all and (min-width:1024px){
+  body > .main > .voltar-menu{
+    display: none;
+  }
+
+  .main{
+    width: 75%;
+    position: absolute;
+    left:25%;
+    top: 0;
+  }
+
+  #formulario{
+    width: 70%;
+    margin-top: 3%;
+  }
+
+  .aside {
+    background-color: #F7F2E0;
+    width: 25%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 200px auto 100px;
+    grid-template-areas: "logo"
+                        "menu"
+                        "footer";
+  }
+
+  .logo{
+      margin-top: 20px;
+      grid-area: "logo";
+      justify-self: center;
+      align-self: center;
+  }
+
+  .menu{
+      margin-top: 10px;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 20px;
+      text-align: center;
+
+      grid-area: "menu";
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+
+  a{
+      box-sizing: border-box;
+      padding: 25px;
+      color: #19070B;
+      text-decoration: none;
+  }
+
+  body > .aside > .menu > a:hover{
+      background-color: #19070B;
+      color:white;
+  } 
+
+  .footer{
+      grid-area: "footer";
+      text-align: center;
+      padding-top: 20px;
+  }
+
+  .footer > a{
+      padding: 0;
+  }
+
+  .footer > a > i {
+      font-size: 40px;
+      margin: 0px 20px;
+  }
+
+}
+
+body{
+  background-color: #19070B;
+}
+
+.main{
+  height: 100%;
+}
+
+#formulario{
+  background-color: #F7F2E0;
+  padding: 20px;
+  text-align: center;
+  color: #19070B;
+}
+
+#formulario > form{
+  font-size: 15px;  
+}
+
+#formulario > form > input{
+  font-size: 12px;
+}
+
+#formulario > div > p{
+  font-size: 20px;
+  text-align: center;
+}
